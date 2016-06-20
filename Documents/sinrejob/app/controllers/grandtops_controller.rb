@@ -1,0 +1,2 @@
+class GrandtopsController < ApplicationController
+end

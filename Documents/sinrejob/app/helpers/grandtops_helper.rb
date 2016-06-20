@@ -1,0 +1,2 @@
+module GrandtopsHelper
+end

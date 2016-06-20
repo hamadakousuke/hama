@@ -1,0 +1,15 @@
+
+
+<head>
+</heda>
+<h1>求人案件一覧</h1>
+
+<ul>
+
+  <% @jobs.each do |job| %>
+  <li><%= link_to job.title,job_path(job.id) %></li>
+<% end %>
+
+<p><%= link_to 'TOPへ戻る',grandtops_path %></p>
+
+</ul>

@@ -1,0 +1,16 @@
+<h1>会社管理</h1>
+<p>Find me in app/views/client/index.html.erb</p>
+
+<ul>
+
+  <% @client.each do |client| %>
+  <li><%= link_to client.client,client_show(client.id) %></li>
+  <li><%= @client.client %>
+    <%= @client.corporate_form %>
+    <%= @client.contract_status %>
+    <%= @client.pulling_down %></li>
+<% end %>
+
+<p><%= link_to 'TOPへ戻る',v2s_index_path %></p>
+
+</ul>
